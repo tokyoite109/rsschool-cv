@@ -15,20 +15,20 @@
 **Code Example:**
 
 ```
-        const scrollUp = document.querySelector('.scrollUp')
-        window.addEventListener('scroll', function ( event ) {
-            let isScrolling;
-            if (document.body.scrollTop > 1200 || document.documentElement.scrollTop > 1200) {
-                scrollUp.style.display = "block";
+const scrollUp = document.querySelector('.scrollUp')
+window.addEventListener('scroll', function ( event ) {
+    let isScrolling;
+    if (document.body.scrollTop > 1200 || document.documentElement.scrollTop > 1200) {
+        scrollUp.style.display = "block";
 
-                window.clearTimeout( isScrolling );
+        window.clearTimeout( isScrolling );
 
-                isScrolling = setTimeout(function() {
-                if(scrollUp.style.display === "block"){
-                scrollUp.style.display = "none";}
-	            }, 5000)
+        isScrolling = setTimeout(function() {
+        if(scrollUp.style.display === "block"){
+        scrollUp.style.display = "none";}
+        }, 5000)
 
-            } else {
-                scrollUp.style.display = "none";}
-            })
+    } else {
+        scrollUp.style.display = "none";}
+    })
 ```
