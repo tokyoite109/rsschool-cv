@@ -135,11 +135,6 @@ footer span{
     color: black;
 }
 
-.github{
-    display: flex;
-    text-align: center;
-}
-
 .github a:link{
     color: black;
     text-decoration: none;
