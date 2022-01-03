@@ -1,0 +1,146 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #0F1823;
+    color: white;
+    font-family: 'Zen Maru Gothic', sans-serif;
+}
+
+.container {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    background-color: #07101E;
+    padding: 50px 70px 10px 70px;
+    font-size: 22px;
+}
+
+nav {
+    display: flex;
+    color:rgb(192, 189, 189);
+}
+
+.dropdown {
+    position: relative;
+    display: flex;
+    justify-content: end;
+  }
+  
+.dropdown_content {
+    display: none;
+    position: absolute;
+    padding: 10px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown_content {
+    display: block;
+    background-color: #07101E;
+}
+
+nav a:link, a:visited{
+    color:rgb(192, 189, 189);
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+
+.name_info{
+    line-height: 50px;
+}
+
+.name_info h1{
+    font-size: 45px;
+}
+
+.name_info h2{
+    font-size: 25px;
+}
+
+.name_info p{
+    font-size: 20px;
+}
+
+.avatar {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.main_content_section, .aside_content_section{
+    padding: 10px;
+}
+
+span{
+    color: rgb(139, 136, 136);
+}
+
+.code{
+    padding: 10px;
+}
+
+.project{
+    padding: 10px;
+}
+
+.project img {
+    width: 100px;
+    height: 100px;
+}
+
+.project a{
+    text-decoration: none;
+}
+
+aside {
+    float: right;
+    width: 45%;
+    padding: 0 100px;
+    margin-left: 50px;
+    font-size: 20px;
+}
+
+aside h5{
+    color: rgb(139, 136, 136);
+}
+
+ul{
+    list-style-type: none;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(192, 189, 189);
+    height: 90px;
+    padding: 20px;
+}
+
+footer span{
+    color: black;
+}
+
+.github{
+    display: flex;
+    text-align: center;
+}
+
+.github a:link{
+    color: black;
+    text-decoration: none;
+}
